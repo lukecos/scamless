@@ -5,6 +5,39 @@
     font-family: 'Figtree', sans-serif;
 }
 
+/*Fonts*/
+
+h1 {
+    color: #033D4A;
+    margin-bottom: 2rem;;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.font-weight-bold {
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+h2 {
+    text-align: left;
+    display: flex;
+    color: black;
+    margin-bottom: 2rem;;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.light {
+    color: white;
+}
+
+p {
+    font-size: x-large;
+}
+
+/*Nav-Bar*/
+
 nav {
     height: 90px;
     background-color: white;
@@ -17,11 +50,12 @@ nav {
 .nav-items {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .nav-logo {
     color: black;
-    width: 75px;
+    width: 175px;
 }
 
 nav a {
@@ -30,14 +64,26 @@ nav a {
     padding: 0 1.5rem;
 }
 
+.nav-button {
+    color: white;
+    background-color: #B05E6C;
+}
+
+.nav-button:hover {
+    color: white;
+    background-color: #B05E6C;
+}
+
+/*HeroSection*/
+
 .heroSection {
-    background-color: rgb(44, 44, 44);
+    background-color: #033D4A;
 }
 
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 95vh;
+    height: 85vh;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
@@ -47,39 +93,33 @@ nav a {
     justify-content: center;
     align-items: flex-start;
     color: black;
-    padding: 0rem 5rem;
+    padding: 0rem 4rem;
 }
 
 .column-left h1 {
     color: white;
     margin-bottom: 2rem;;
-    font-size: 5rem;
-    line-height: 4.5rem;
-}
-
-.nav-button {
-    color: black;
-    background-color: lightgray;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 5.25rem;
 }
 
 button {
     padding: .75rem 1.25rem;
-    font-size: 1rem;
+    font-size: large;
     font-weight: normal;
     border: none;
-    color: black;
-    background: white;
+    color: white;
+    background: #B05E6C;
     cursor: pointer;
     border-radius: 50px;
 }
 
 button:hover {
     padding: .75rem 1.25rem;
-    font-size: 1rem;
-    border-width: 2px;
-    border-color: white;
-    color: white;
-    background: black;
+    font-size: large;
+    color: #B05E6C;
+    background: white;
     cursor: pointer;
     border-radius: 50px;
 }
@@ -92,9 +132,12 @@ button:hover {
 }
 
 .hero-image {
+    display: flex;
     width: 100%;
     background-size: cover;
 }
+
+/*ScreenSizeResponsiveness*/
 
 @media screen and (max-width: 950px) {
     .hero-container {
@@ -114,6 +157,47 @@ button:hover {
         display: flex;
         align-items: center;
     }
+}
 
-    
+/*WhatIsScamLess-Section*/
+
+.shieldsection-image {
+    width: 80%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+/*Easiest-Section*/
+
+.easiestSection {
+    background-color: #033D4A;
+}
+
+/*Anyone-Section*/
+
+.section-image {
+    width: 100%;
+}
+
+/*how-does-it-work*/
+
+.quotes-container {
+    display: grid;
+    height: 85vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.grid-container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
