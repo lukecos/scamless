@@ -9,7 +9,6 @@
 
 h1 {
     color: #033D4A;
-    margin-bottom: 2rem;;
     font-size: 5rem;
     font-weight: 400;
 }
@@ -26,6 +25,14 @@ h2 {
     margin-bottom: 2rem;;
     font-size: 4rem;
     font-weight: 400;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
 }
 
 .light {
@@ -83,7 +90,7 @@ nav a {
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 85vh;
+    height: 95vh;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
@@ -191,13 +198,97 @@ button:hover {
 
 /*how-does-it-work*/
 
-.quotes-container {
+.howDoesItWork {
+    background-color: #033D4A;
+}
+
+.hero-container2 {
     display: grid;
-    height: 85vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 95vh;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .box1 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 250px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: #B05E6C;
+  }
+
+  .box1 img {
+    width: 90px;
+    padding-left: 15px;
+  }
+
+  .box2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 250px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: #B05E6C;
+  }
+
+  .box2 img {
+    width: 90px;
+    padding-left: 15px;
+  }
+
+  .box3 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 250px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: #B05E6C;
+  }
+
+  .box3 img {
+    width: 90px;
+    padding-left: 15px;
+  }
+  
+/*what-are-our-customers-saying*/
+
 .grid-container-cards {
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3rem calc((75vw - 1300px) / 2);
+}
+
+.card {
+    padding: 3rem;
+}
+
+.card-text {
+    font-style: italic;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #033D4A;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
 }
