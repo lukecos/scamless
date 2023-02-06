@@ -7,7 +7,16 @@
 
 /*Fonts*/
 
+.right-aligned {
+    text-align: right;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
 h1 {
+    display: inline;
     color: #273469;
     font-size: 5rem;
     font-weight: 400;
@@ -15,12 +24,12 @@ h1 {
 
 .font-weight-bold {
     font-weight: 800;
-    padding-left: 15px;
+    display: inline;
 }
 
 h2 {
     text-align: left;
-    display: flex;
+    display: inline;
     color: black;
     margin-bottom: 2rem;;
     font-size: 4rem;
@@ -66,6 +75,7 @@ nav {
 }
 
 nav a {
+    font-size: larger;
     text-decoration: none;
     color: black;
     padding: 0 1.5rem;
@@ -139,16 +149,21 @@ button:hover {
     padding: 0rem 2rem;
 }
 
-.hero-image {
-    display: flex;
-    width: 100%;
-    background-size: cover;
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((90vw - 1300px) / 2);
 }
 
 /*ScreenSizeResponsiveness*/
 
 @media screen and (max-width: 950px) {
     .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .content-container {
         grid-template-columns: 1fr;
     }
 }
@@ -191,7 +206,19 @@ button:hover {
 /*Easiest-Section*/
 
 .easiestSection {
-    background-color: #CFE3E7;
+    background-color:#03174A;
+}
+
+.grid-item-1 {
+    margin-bottom: 25px;
+}
+
+.light {
+    text-align: right;
+}
+
+.section-image {
+width: 750px;
 }
 
 /*Anyone-Section*/
@@ -200,9 +227,7 @@ button:hover {
     background-color: #F3F3F3
 }
 
-.section-image {
-    width: 100%;
-}
+
 
 /*how-does-it-work*/
 
