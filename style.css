@@ -8,7 +8,7 @@
 /*Fonts*/
 
 h1 {
-    color: #033D4A;
+    color: #273469;
     font-size: 5rem;
     font-weight: 400;
 }
@@ -72,19 +72,23 @@ nav a {
 }
 
 .nav-button {
-    color: white;
-    background-color: #B05E6C;
+    color: black;
+    background-color: #FFCC16;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFCC16;
 }
 
 .nav-button:hover {
-    color: white;
-    background-color: #B05E6C;
+    color: black ;
+    background-color: white;
+    transition: ease-in-out .2s
 }
 
 /*HeroSection*/
 
 .heroSection {
-    background-color: #033D4A;
+    background-color: #273469;
 }
 
 .hero-container {
@@ -116,19 +120,16 @@ button {
     font-size: large;
     font-weight: normal;
     border: none;
-    color: white;
-    background: #B05E6C;
+    color: black;
+    background: #FFCC16;
     cursor: pointer;
     border-radius: 50px;
 }
 
 button:hover {
-    padding: .75rem 1.25rem;
-    font-size: large;
-    color: #B05E6C;
-    background: white;
-    cursor: pointer;
-    border-radius: 50px;
+   color: black ;
+    background-color: white;
+    transition: ease-in-out .2s
 }
 
 .column-right {
@@ -167,6 +168,9 @@ button:hover {
 }
 
 /*WhatIsScamLess-Section*/
+.what-is-scamless {
+    background-color: #F3F3F3
+}
 
 .shieldsection-image {
     width: 80%;
@@ -187,10 +191,14 @@ button:hover {
 /*Easiest-Section*/
 
 .easiestSection {
-    background-color: #033D4A;
+    background-color: #CFE3E7;
 }
 
 /*Anyone-Section*/
+
+.anyoneCanBe {
+    background-color: #F3F3F3
+}
 
 .section-image {
     width: 100%;
@@ -199,7 +207,7 @@ button:hover {
 /*how-does-it-work*/
 
 .howDoesItWork {
-    background-color: #033D4A;
+    background-color: white;
 }
 
 .hero-container2 {
@@ -223,8 +231,8 @@ button:hover {
     background-color: #ddd;
     padding: 20px;
     border-radius: 15px;
-    color: white;
-    background-color: #B05E6C;
+    color: #FFCC16;
+    background-color: #273469;
   }
 
   .box1 img {
@@ -240,8 +248,8 @@ button:hover {
     background-color: #ddd;
     padding: 20px;
     border-radius: 15px;
-    color: white;
-    background-color: #B05E6C;
+    color: #FFCC16;
+    background-color: #273469;
   }
 
   .box2 img {
@@ -257,8 +265,8 @@ button:hover {
     background-color: #ddd;
     padding: 20px;
     border-radius: 15px;
-    color: white;
-    background-color: #B05E6C;
+    color: #FFCC16;
+    background-color: #273469;
   }
 
   .box3 img {
@@ -267,6 +275,10 @@ button:hover {
   }
   
 /*what-are-our-customers-saying*/
+
+.customerQuotes {
+    background-color: #F3F3F3
+}
 
 .grid-container-cards {
     display: grid;
@@ -286,7 +298,7 @@ button:hover {
 /*footer*/
 
 .footer {
-    background-color: #033D4A;
+    background-color: #273469;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 30vh;
