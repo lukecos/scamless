@@ -7,6 +7,14 @@
 
 /*Fonts*/
 
+.styled-underlined {
+    text-decoration: underline;
+    text-decoration-color: #FFCC16;
+    text-decoration-style: solid;
+    text-decoration-thickness: 12px;
+    text-underline-offset: 30px;
+}
+
 .right-aligned {
     text-align: right;
 }
@@ -17,7 +25,7 @@
 
 h1 {
     display: inline;
-    color: #273469;
+    color: #313131;
     font-size: 5rem;
     font-weight: 400;
 }
@@ -30,7 +38,7 @@ h1 {
 h2 {
     text-align: left;
     display: inline;
-    color: black;
+    color:#313131;
     margin-bottom: 2rem;;
     font-size: 4rem;
     font-weight: 400;
@@ -52,9 +60,14 @@ p {
     font-size: x-large;
 }
 
+.aboutUs {
+    display: flex;
+    font-size: 3rem;
+}
+
 /*Nav-Bar*/
 
-nav {
+header nav {
     height: 90px;
     background-color: white;
     display: flex;
@@ -77,12 +90,12 @@ nav {
 nav a {
     font-size: larger;
     text-decoration: none;
-    color: black;
+    color: #313131;
     padding: 0 1.5rem;
 }
 
 .nav-button {
-    color: black;
+    color: #313131;
     background-color: #FFCC16;
     border-style: solid;
     border-width: 1px;
@@ -90,7 +103,7 @@ nav a {
 }
 
 .nav-button:hover {
-    color: black ;
+    color: #313131;
     background-color: white;
     transition: ease-in-out .2s
 }
@@ -113,7 +126,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: black;
+    color: #313131;
     padding: 0rem 4rem;
 }
 
@@ -130,14 +143,14 @@ button {
     font-size: large;
     font-weight: normal;
     border: none;
-    color: black;
+    color: #313131;
     background: #FFCC16;
     cursor: pointer;
     border-radius: 50px;
 }
 
 button:hover {
-   color: black ;
+   color: #313131;
     background-color: white;
     transition: ease-in-out .2s
 }
@@ -161,20 +174,33 @@ button:hover {
 @media screen and (max-width: 950px) {
     .hero-container {
         grid-template-columns: 1fr;
+        padding: auto;
     }
 
     .content-container {
         grid-template-columns: 1fr;
+        padding: 100px;
+        text-align: center;
     }
+
+    .right-aligned {
+        text-align: center;
+    }
+
+    .left-aligned {
+        text-align: center;
+    }
+
 }
 
-@media screen and (max-width: 900px) {
-    nav {
+@media screen and (max-width: 1200px) {
+    header nav {
         height: 90px;
         background-color: white;
         display: flex;
         align-items: center;
         padding: 0rem 2rem;
+
     }
     .nav-items {
         display: flex;
@@ -188,7 +214,7 @@ button:hover {
 }
 
 .shieldsection-image {
-    width: 80%;
+    width: 75%;
 }
 
 .section-title {
@@ -211,10 +237,6 @@ button:hover {
 
 .grid-item-1 {
     margin-bottom: 25px;
-}
-
-.light {
-    text-align: right;
 }
 
 .section-image {
@@ -261,8 +283,13 @@ width: 750px;
   }
 
   .box1 img {
-    width: 90px;
+    width: 100px;
     padding-left: 15px;
+  }
+
+  .box1:hover {
+    scale: 1.1;
+    transition: ease-in-out .3s;
   }
 
   .box2 {
@@ -278,8 +305,13 @@ width: 750px;
   }
 
   .box2 img {
-    width: 90px;
+    width: 100px;
     padding-left: 15px;
+  }
+
+  .box2:hover {
+    scale: 1.1;
+    transition: ease-in-out .3s;
   }
 
   .box3 {
@@ -295,14 +327,32 @@ width: 750px;
   }
 
   .box3 img {
-    width: 90px;
+    width: 100px;
     padding-left: 15px;
+  }
+
+  .box3:hover {
+    scale: 1.1;
+    transition: ease-in-out .3s;
   }
   
 /*what-are-our-customers-saying*/
 
 .customerQuotes {
     background-color: #F3F3F3
+}
+
+.circle {
+    display: inline-flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #273469;
+    background-color: white;
 }
 
 .grid-container-cards {
@@ -322,10 +372,53 @@ width: 750px;
 
 /*footer*/
 
-.footer {
-    background-color: #273469;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 30vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
+footer {
+    display: flex;
+    background-color: #313131;
+    padding: 3rem calc((75vw - 1300px) / 2);
+    justify-content: center;
+}
+    
+footer nav {
+    align-items: center;
+    justify-content: center;
+    background-color:#313131;
+    
+}
+
+footer div {
+    display: inline;
+    background-color: #313131;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+.footer-button {
+    background-color: white;
+}
+
+.footer-button:hover {
+    background-color: #FFCC16;
+}
+
+ul li{
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+/*about us page*/
+
+.aboutUs-container {
+    display: block;
+    height: 110vh;
+    padding: 3rem calc((90vw - 1300px) / 2);
+}
+
+.About-Us {
+    background-color: #273469
+}
+
+.spaced {
+    margin-bottom: 100px;
 }
