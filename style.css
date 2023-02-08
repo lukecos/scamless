@@ -293,16 +293,11 @@ width: 750px;
     position: relative;
   }
 
-.hover-element {
-    position: relative;
-  }
-  
-.hover-text {
-    display: none;
-    position: absolute;
-    color: #313131;
-    padding: 5px;
-    top: 120%;
+.details {
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 400px;
+    list-style-type: disc;
   }
 
   .box1 {
@@ -369,6 +364,10 @@ width: 750px;
   .box3:hover {
     scale: 1.1;
     transition: ease-in-out .3s;
+  }
+
+  .work-details {
+    font-size: 2rem;
   }
   
 /*what-are-our-customers-saying*/
