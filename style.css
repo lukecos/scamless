@@ -116,6 +116,18 @@ nav a {
     padding: 0 1.5rem;
 }
 
+nav a:hover {
+    font-size: larger;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: #FFCC16;
+    text-decoration-style: solid;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 5px;
+    color: #313131;
+    padding: 0 1.5rem;
+}
+
 .nav-button {
     color: #313131;
     background-color: #FFCC16;
@@ -125,12 +137,22 @@ nav a {
 }
 
 .nav-button:hover {
-    color: #313131;
-    background-color: white;
+    color: #FFCC16;
+    background-color: #03174A;
     transition: ease-in-out .2s;
     border-style: solid;
     border-width: 4px;
-    border-color: #1B3B9E;
+    border-color: #03174A
+}
+
+.nav-button:active {
+    height: 50px;
+    color: #313131;
+    background-color: #FFCC16;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FFCC16;
+    transition: background-color ease .5s;
 }
 
 .margin {
@@ -169,7 +191,8 @@ button {
     padding: .75rem 1.25rem;
     font-size: large;
     font-weight: normal;
-    border: solid white;
+    border: solid #1B3B9E;
+    border-width: 2px;
     color: white;
     background: #1B3B9E;
     cursor: pointer;
@@ -178,9 +201,10 @@ button {
 }
 
 button:hover {
-    color: #313131;
+    color: #1B3B9E;
     background-color: white;
     border: solid #1B3B9E;
+    border-width: 2px;
     transition: ease-in .2s;
 }
 
@@ -206,11 +230,6 @@ button:hover {
         padding: auto;
     }
 
-    .hero-container2 {
-        grid-template-columns: 1fr;
-        padding: auto;
-    }
-
     .content-container {
         grid-template-columns: 1fr;
         padding: 100px;
@@ -218,8 +237,9 @@ button:hover {
     }
 
     .shieldsection-image {
-        width: 200px;
-        scale: .7;
+        width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .right-aligned {
@@ -228,6 +248,23 @@ button:hover {
 
     .left-aligned {
         text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .column-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #313131;
+        padding: 0rem 4rem;
     }
 
 }
@@ -253,15 +290,15 @@ button:hover {
 }
 
 .shieldsection-image {
-    width: 100%;
-    scale: .7;
+    scale: 1;
+    margin-left: 100px;
 }
 
 
 .section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+
     padding-top: 100px;
 }
 
@@ -295,14 +332,14 @@ width: 750px;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 80%;
-    background-position: center;
+    background-position: center
     
 }
 
 .hero-container2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 95vh;
+    height: 75vh;
     padding: 3rem calc((75vw - 1300px) / 2);
 }
 
@@ -314,7 +351,7 @@ width: 750px;
 
 .details {
     display: flex;
-    margin-top: 525px;
+    margin-top: 350px;
     margin-left: 30px;
     margin-right: 30px;
     font-size: 1.25rem;
@@ -323,7 +360,7 @@ width: 750px;
 
   .details-2 {
     display: flex;
-    margin-top: 525px;
+    margin-top: 350px;
     margin-left: 30px;
     margin-right: 30px;
     font-size: 1.25rem;
@@ -332,7 +369,7 @@ width: 750px;
 
   .details-3 {
     display: flex;
-    margin-top: 525px;
+    margin-top: 350px;
     margin-left: 30px;
     margin-right: 30px;
     font-size: 1.25rem;
@@ -351,7 +388,7 @@ width: 750px;
     display: flex;
     position: absolute;
     align-items: center;
-    top: 300px;
+    top: 190px;
     width: 100%;
     height: 25%;
     padding: 20px;
@@ -369,7 +406,7 @@ width: 750px;
     display: flex;
     position: absolute;
     align-items: center;
-    top: 300px;
+    top: 190px;
     width: 100%;
     height: 25%;
     padding: 20px;
@@ -387,7 +424,7 @@ width: 750px;
     display: flex;
     position: absolute;
     align-items: center;
-    top: 300px;
+    top: 190px;
     width: 100%;
     height: 25%;
     padding: 20px;
@@ -409,7 +446,7 @@ width: 750px;
     border-width: 10px;
     border-radius: 15px;
     text-align: center;
-    top: -725px;
+    top: -100px;
     right: -125%;
     width: 100%;
     padding: 20px;
@@ -476,13 +513,6 @@ footer {
     padding: 3rem calc((75vw - 1300px) / 2);
     justify-content: center;
 }
-    
-footer nav {
-    align-items: center;
-    justify-content: center;
-    background-color:#313131;
-    
-}
 
 footer div {
     display: inline;
@@ -506,6 +536,12 @@ footer div {
 ul li{
     padding-top: 10px;
     list-style-type: none;
+}
+
+.centered-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*about us / resources / contact pages*/
@@ -608,6 +644,8 @@ input[type=text], select, textarea {
 }
   
   input[type=submit] {
+    scale: 1.2;
+    margin-left: 10px;
     background-color: #FFCC16;
     color: #313131;
     padding: 12px 20px;
@@ -617,7 +655,8 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #03174A;
+    color: white;
   }
   
   .container2 {
